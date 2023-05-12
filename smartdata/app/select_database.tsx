@@ -9,7 +9,7 @@ export async function SelectData() {
     <div>
       <h1>Select a database:</h1>
       <Select rows={data} />
-      <DatasetPage selectData={data} />
+      {/* <DatasetPage selectData={data} /> */}
     </div>
   );
 }

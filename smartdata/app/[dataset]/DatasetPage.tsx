@@ -18,7 +18,7 @@ import {
   MagnifyingGlassIcon,
 } from "@heroicons/react/20/solid";
 import { DatasetSample } from "./DatasetSample";
-import { select_database } from "../select_database";
+// import { select_database } from "../select_database";
 
 const teams = [
   { id: 1, name: "Heroicons", href: "#", initial: "H", current: false },
@@ -31,7 +31,7 @@ const userNavigation = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-export default function DatasetPage({ columns, dataset, selectData }) {
+export default function DatasetPage({ columns, dataset }) {
   const navigation = columns.map(({ columnname }) => ({
     name: columnname,
     href: "#",
@@ -174,7 +174,7 @@ export default function DatasetPage({ columns, dataset, selectData }) {
               />
             </div>
             <nav className="flex flex-1 flex-col">
-              <h1>{selectData}</h1>
+              {/* <h1>{selectData}</h1> */}
               <ul role="list" className="flex flex-1 flex-col gap-y-7">
                 <li>
                   <ul role="list" className="-mx-2 space-y-1">

@@ -73,7 +73,7 @@ export function DatasetSample({ dataset }) {
         ref={tableRef}
         className="table-container"
       >
-        <table style={{ minWidth: "100%" }}>
+        <table style={{ minWidth: "100%",minHeight:"100%" }}>
           <thead
             style={{
               position: showHeader ? "sticky" : "relative",
